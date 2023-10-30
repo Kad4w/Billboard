@@ -1,0 +1,320 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	.header{
+		background: #c3c9d4;
+		height: 100px;
+	}
+	.header_center{
+		height: 95px;
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		font-family: Arial;
+	}
+	.charts_container{
+		margin-left: auto;
+		margin-right: auto;
+		width: 1200px;
+	}
+	.charts_sort{
+		height: 100px;
+		padding-top: 40px;
+		box-sizing: border-box;
+	}
+	.charts{
+		margin-top: 10px;
+		height: 150px;
+		border-radius: 10px;
+		display: flex;
+	}
+	.charts:hover{
+		transform: scale(1.5);
+		transition: 0.5s;
+	}
+	.charts
+	.box_logo{
+		width: 250px;
+		height: 100px;
+		padding-top: 10px;
+		box-sizing: border-box;
+	}
+	.box_links{
+		width: 800px;
+		height: 100px;
+		padding-top: 35px;
+		box-sizing: border-box;
+	}
+	.box_buttons{
+		width: 150px;
+		height: 100px;
+		text-align: center;
+		padding-top: 30px;
+		box-sizing: border-box;
+	}
+	.charts_rank{
+		width: 150px;
+		height: 150px;
+		text-align: center;
+	}
+	.charts_info{
+		width: 650px;
+		height: 150px;
+	}
+	.charts_button{
+		width: 250px;
+		height: 150px;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.charts_img{
+		width: 150px;
+		height: 150px;
+	}
+	.rank_title{
+		font-size: 45px;
+		font-family: Arial;
+	}
+	.song_name{
+		font-family: Arial;
+		color: #12365c;
+		font-size: 30px;
+		font-weight: 600
+	}
+	.song_artist{
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		font-weight: 600
+	}
+	.rank{
+		font-family: Arial;
+		font-weight: 800;
+	}
+	.btn{
+		color: white;
+		border: none;
+		border-radius: 5px;
+		padding-top: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 10px;
+	}
+	.link{
+		font-family: Arial;
+		font-size: 20px;
+		margin-left: 30px;
+	}
+	.green{
+		background: green;
+	}
+	.purple{
+		background: purple;
+	}
+	.blue{
+		background: blue;
+	}
+	.orange{
+		background: orange;
+	}
+	.red{
+		background: red;
+	}
+	.text_white{
+		color: white;
+	}
+	.text_red{
+		color: red;
+	}
+	.text_orange{
+		color: orange;
+	}
+	.text_green{
+		color: green;
+	}
+	.up{
+		background: rgb(255,0,0);
+		background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(41,210,250,1) 100%);
+	}
+	.new{
+		background: rgb(4,0,255);
+		background: linear-gradient(90deg, rgba(4,0,255,1) 0%, rgba(41,250,104,1) 100%);
+	}
+	.down{
+		background: rgb(239,0,255);
+		background: linear-gradient(90deg, rgba(239,0,255,1) 0%, rgba(250,41,41,1) 100%);
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header_center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box_logo">
+			<img src="logo.png" style="width: 250px">
+		</div>
+		<!-- ссылки -->
+		<div class="box_links">
+			<a href="#" class="link text_white">CHARTS</a>
+			<a href="#" class="link text_white">NEWS</a>
+			<a href="#" class="link text_red">VIDEO</a>
+			<a href="#" class="link text_orange">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box_buttons">
+			<button class="btn purple">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts_container">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts_sort">
+		<button class="btn orange">THIS WEEK</button>
+		<button class="btn red">LAST WEEK</button>
+		<button class="btn green">PEAK</button>
+		<button class="btn purple">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">1</h1>
+			<p class="rank text_green">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Черный Русский</p>
+			<p class="song_artist">MORGENSHTERN</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn blue" onclick="window.location.href = 'https://www.youtube.com/watch?v=pK7CIj-_uBk'">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="cherniy.png" style="width: 150px;">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">2</h1>
+			<p class="rank text_orange">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Hex</p>
+			<p class="song_artist">80purpp</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="hex.jfif" style="width: 150px;">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">3</h1>
+			<p class="rank text_orange">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Nightmare x White Snow</p>
+			<p class="song_artist">Mashup</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="nightmare.jpg" style="width: 150px;">
+		</div>
+	</div>
+
+	<!-- трек up -->
+	<div class="charts up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">4</h1>
+			<p class="rank text_green">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Asphalt 8</p>
+			<p class="song_artist">Macan</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="asphalt.jpg" style="width: 150px;">
+		</div>
+	</div>
+
+	<!-- трек down -->
+	<div class="charts down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">5</h1>
+			<p class="rank text_red">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Белая ночь</p>
+			<p class="song_artist">Форум</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="forum.jpg" style="width: 150px;">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts_rank">
+			<h1 class="rank_title">6</h1>
+			<p class="rank text_orange">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts_info">
+			<p class="song_name">Пора Пока</p>
+			<p class="song_artist">Bahroma</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts_button">
+			<button class="btn blue" onclick="window.location.href = 'https://www.youtube.com/watch?v=lMRMLq9vZok'">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts_img">
+			<img src="bahroma.jpg" style="width: 150px;">
+		</div>
+	</div>
+</div>
